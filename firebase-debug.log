@@ -1,0 +1,76 @@
+[debug] [2022-08-09T23:56:14.857Z] ----------------------------------------------------------------------
+[debug] [2022-08-09T23:56:14.858Z] Command:       /usr/local/bin/firebase /Users/vinicius/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/bin/firebase serve
+[debug] [2022-08-09T23:56:14.859Z] CLI Version:   11.4.2
+[debug] [2022-08-09T23:56:14.859Z] Platform:      darwin
+[debug] [2022-08-09T23:56:14.859Z] Node Version:  v16.16.0
+[debug] [2022-08-09T23:56:14.865Z] Time:          Tue Aug 09 2022 19:56:14 GMT-0400 (Eastern Daylight Time)
+[debug] [2022-08-09T23:56:14.866Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-08-09T23:56:14.946Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-08-09T23:56:14.947Z] > authorizing via signed-in user (verus.automatedbilling@gmail.com)
+[debug] [2022-08-09T23:56:14.948Z] [iam] checking project verus-69947 for permissions ["firebase.projects.get"]
+[debug] [2022-08-09T23:56:14.952Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/verus-69947:testIamPermissions [none]
+[debug] [2022-08-09T23:56:14.953Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/verus-69947:testIamPermissions x-goog-quota-user=projects/verus-69947
+[debug] [2022-08-09T23:56:14.953Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/verus-69947:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2022-08-09T23:56:15.357Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/verus-69947:testIamPermissions 200
+[debug] [2022-08-09T23:56:15.360Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/verus-69947:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2022-08-09T23:56:15.363Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/verus-69947 [none]
+[debug] [2022-08-09T23:56:15.733Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/verus-69947 200
+[debug] [2022-08-09T23:56:15.735Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/verus-69947 {"projectId":"verus-69947","projectNumber":"1084790538717","displayName":"Verus","name":"projects/verus-69947","resources":{"hostingSite":"verus-69947","storageBucket":"verus-69947.appspot.com","locationId":"northamerica-northeast1"},"state":"ACTIVE","etag":"1_9488d2db-34b3-4ac8-83e2-a67739523b55"}
+[info] 
+[info] === Serving from '/Users/vinicius/Downloads/v1-master 4'...
+[info] 
+[debug] [2022-08-09T23:56:15.751Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/verus-69947/sites 
+[info] ✔  functions: Using node@16 from host. {"metadata":{"emulator":{"name":"functions"},"message":"Using node@16 from host."}}
+[debug] [2022-08-09T23:56:15.819Z] defaultcredentials: writing to file /Users/vinicius/.config/firebase/verus_automatedbilling_gmail.com_application_default_credentials.json
+[debug] [2022-08-09T23:56:15.822Z] Setting GAC to /Users/vinicius/.config/firebase/verus_automatedbilling_gmail.com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to /Users/vinicius/.config/firebase/verus_automatedbilling_gmail.com_application_default_credentials.json"}}
+[debug] [2022-08-09T23:56:15.824Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/verus-69947/adminSdkConfig [none]
+[debug] [2022-08-09T23:56:16.158Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/verus-69947/adminSdkConfig 200
+[debug] [2022-08-09T23:56:16.159Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/verus-69947/adminSdkConfig {"projectId":"verus-69947","storageBucket":"verus-69947.appspot.com","locationId":"northamerica-northeast1"}
+[debug] [2022-08-09T23:56:16.263Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/verus-69947/sites 200
+[debug] [2022-08-09T23:56:16.264Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/verus-69947/sites {"sites":[{"name":"projects/verus-69947/sites/verus-69947","defaultUrl":"https://verus-69947.web.app","appId":"1:1084790538717:web:473d7e4d23c76c94c0b634","type":"DEFAULT_SITE"}]}
+[debug] [2022-08-09T23:56:16.266Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/verus-69947/webApps/1:1084790538717:web:473d7e4d23c76c94c0b634/config [none]
+[debug] [2022-08-09T23:56:16.865Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/verus-69947/webApps/1:1084790538717:web:473d7e4d23c76c94c0b634/config 200
+[debug] [2022-08-09T23:56:16.867Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/verus-69947/webApps/1:1084790538717:web:473d7e4d23c76c94c0b634/config {"projectId":"verus-69947","appId":"1:1084790538717:web:473d7e4d23c76c94c0b634","storageBucket":"verus-69947.appspot.com","locationId":"northamerica-northeast1","apiKey":"AIzaSyDcEF75RT4BLjMQV3AKGre9NqiupbBfc2Y","authDomain":"verus-69947.firebaseapp.com","messagingSenderId":"1084790538717","measurementId":"G-XS4DG0T11L"}
+[warn] ⚠  hosting: Port 5000 is not available. Trying another port... {"metadata":{"emulator":{"name":"hosting"},"message":"\u001b[33mhosting: \u001b[39mPort 5000 is not available. Trying another port..."}}
+[info] i  functions: Watching "/Users/vinicius/Downloads/v1-master 4/functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"/Users/vinicius/Downloads/v1-master 4/functions\" for Cloud Functions..."}}
+[info] i  hosting: Serving hosting files from: public {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mpublic\u001b[22m"}}
+[info] ✔  hosting: Local server: http://localhost:5005 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://localhost:5005\u001b[22m\u001b[24m"}}
+[debug] [2022-08-09T23:56:17.104Z] Validating nodejs source
+[debug] [2022-08-09T23:56:20.754Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-08-09T23:56:20.755Z] Building nodejs source
+[debug] [2022-08-09T23:56:20.755Z] Analyzing nodejs backend spec
+[debug] [2022-08-09T23:56:20.759Z] Could not find functions.yaml. Must use http discovery
+[info] i  hosting: 127.0.0.1 - - [09/Aug/2022:23:56:21 +0000] "GET / HTTP/1.1" 200 611 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [09/Aug/2022:23:56:21 +0000] \"GET / HTTP/1.1\" 200 611 \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [09/Aug/2022:23:56:21 +0000] "GET /%3C%=%20BASE_URL%20%%3Efavicon.ico HTTP/1.1" 500 - "http://localhost:5005/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [09/Aug/2022:23:56:21 +0000] \"GET /%3C%=%20BASE_URL%20%%3Efavicon.ico HTTP/1.1\" 500 - \"http://localhost:5005/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36\""}}
+[debug] [2022-08-09T23:56:22.548Z] Serving at port 9005
+
+[debug] [2022-08-09T23:56:22.636Z] Got response from /__/functions.yaml {"endpoints":{},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-08-09T23:56:22.647Z] shutdown requested via /__/quitquitquit
+
+[info] i  hosting: 127.0.0.1 - - [09/Aug/2022:23:56:25 +0000] "GET / HTTP/1.1" 200 611 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [09/Aug/2022:23:56:25 +0000] \"GET / HTTP/1.1\" 200 611 \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [09/Aug/2022:23:56:26 +0000] "GET /%3C%=%20BASE_URL%20%%3Efavicon.ico HTTP/1.1" 500 - "http://localhost:5005/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [09/Aug/2022:23:56:26 +0000] \"GET /%3C%=%20BASE_URL%20%%3Efavicon.ico HTTP/1.1\" 500 - \"http://localhost:5005/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [09/Aug/2022:23:56:26 +0000] "GET / HTTP/1.1" 200 611 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [09/Aug/2022:23:56:26 +0000] \"GET / HTTP/1.1\" 200 611 \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [09/Aug/2022:23:56:26 +0000] "GET /%3C%=%20BASE_URL%20%%3Efavicon.ico HTTP/1.1" 500 - "http://localhost:5005/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [09/Aug/2022:23:56:26 +0000] \"GET /%3C%=%20BASE_URL%20%%3Efavicon.ico HTTP/1.1\" 500 - \"http://localhost:5005/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36\""}}
